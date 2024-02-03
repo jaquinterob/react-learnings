@@ -1,3 +1,18 @@
-.fondo {
-  background-color: cadetblue;
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.card {
+  background-color: moccasin;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card > div {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
 }
