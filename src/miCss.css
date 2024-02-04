@@ -6,13 +6,23 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: moccasin;
   border-radius: 1rem;
   padding: 1rem;
+  width: 500px;
+  height: 450px;
 }
 
+.card > img {
+  height: 382px;
+  cursor: pointer;
+}
 .card > div {
   text-align: center;
   font-size: x-large;
   font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
 }
