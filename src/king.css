@@ -1,0 +1,10 @@
+.card {
+  padding: 1rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bolder;
+}
