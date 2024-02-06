@@ -19,3 +19,9 @@
 .red {
   color: red;
 }
+
+.vote {
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}

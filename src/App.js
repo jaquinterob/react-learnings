@@ -16,7 +16,7 @@ function App() {
     },
     {
       nombre: "Ataúlfo",
-      reinado: 5,
+      reinado: 40,
       vacasComidas: 16,
     },
     {
@@ -41,18 +41,16 @@ function App() {
     },
   ];
 
-  const kingFound = reyes.find((e) => e.nombre.substring(0,1).toLocaleLowerCase() === 't');
-  let componentToShow = <div>No se encontro ningun rey</div>;
-  if (kingFound) {
-    componentToShow = <Card key={kingFound.nombre} rey={kingFound} />;
-  }
   return (
     <>
-      <h2>Actividad 3:</h2>
-      <div className="container">{componentToShow}</div>
-      {reyes.map((rey) => {
-        return <Card key={rey.nombre} rey={rey} />;
-      })}
+      <h2>Actividad 4:</h2>
+      <div className="container">
+        {reyes
+          .filter((king) => king.vacasComidas > 10 && king.reinado > 10)
+          .map((rey) => {
+            return <Card key={rey.nombre} rey={rey} />;
+          })}
+      </div>
     </>
   );
 }
