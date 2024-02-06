@@ -40,16 +40,19 @@ function App() {
       vacasComidas: 12,
     },
   ];
+
+  const kingFound = reyes.find((e) => e.nombre.substring(0,1).toLocaleLowerCase() === 't');
+  let componentToShow = <div>No se encontro ningun rey</div>;
+  if (kingFound) {
+    componentToShow = <Card key={kingFound.nombre} rey={kingFound} />;
+  }
   return (
     <>
-      <h2>Actividad 1:</h2>
-      <div className="container">
-        {reyes
-          .filter((rey) => !rey.nombre.includes("g"))
-          .map((rey) => {
-            return <Card key={rey.nombre} rey={rey} />;
-          })}
-      </div>
+      <h2>Actividad 3:</h2>
+      <div className="container">{componentToShow}</div>
+      {reyes.map((rey) => {
+        return <Card key={rey.nombre} rey={rey} />;
+      })}
     </>
   );
 }
