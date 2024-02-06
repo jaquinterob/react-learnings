@@ -1,18 +1,14 @@
 import React from "react";
 
 export default function Card({ rey }) {
+  const deleteKing = (e) => {
+    e.target.parentNode.parentNode.remove()
+  };
   return (
     <div className="card">
-      <div className="text">
-        <span className="red">{rey.nombre.toUpperCase()}</span> ha comido {rey.vacasComidas}{" "}
-        vacas en sus {rey.reinado} años de reinado
+      <div>
+        {rey.nombre} <button onClick={deleteKing}>Borrar</button>
       </div>
-      <img
-        src={
-          "https://www.html6.es/img/rey_" + rey.nombre.toLowerCase() + ".png"
-        }
-        alt=""
-      />
     </div>
   );
 }

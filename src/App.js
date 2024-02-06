@@ -44,9 +44,11 @@ function App() {
     <>
       <h2>Actividad 1:</h2>
       <div className="container">
-        {reyes.map((rey) => {
-          return <Card rey={rey} />;
-        })}
+        {reyes
+          .filter((rey) => !rey.nombre.includes("g"))
+          .map((rey) => {
+            return <Card key={rey.nombre} rey={rey} />;
+          })}
       </div>
     </>
   );
