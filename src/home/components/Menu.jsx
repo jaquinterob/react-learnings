@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Contexto } from "../context/Context";
+import { Contexto } from "../../context/Context";
 
 function Menu() {
   const { color } = useContext(Contexto);

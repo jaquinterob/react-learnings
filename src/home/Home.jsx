@@ -1,8 +1,8 @@
 import React from "react";
-import Top from "./Top";
-import Menu from "./Menu";
-import Outlet from "./Outlet";
-import Controls from "./Controls";
+import Top from "./components/Top";
+import Menu from "./components/Menu";
+import Outlet from "./components/Outlet";
+import Controls from "./components/Controls";
 import { Datos, Contexto } from "./../context/Context";
 
 function Home() {
