@@ -1,0 +1,26 @@
+.king-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.king-name {
+  font-size: 30px;
+  color: brown;
+  font-weight: bolder;
+}
+
+.nav-container {
+  background-color: rgb(116, 116, 116);
+  display: flex;
+}
+
+.nav-container > a {
+  border: 1px solid rgb(192, 192, 192);
+  color: white;
+  padding: 1rem;
+  margin: 4px;
+}
