@@ -38,7 +38,6 @@ function Home() {
           <Producto key={producto.id} producto={producto} dispatch={dispatch} />
         ))
       )}
-      {<pre>{JSON.stringify(productos, null, 2)}</pre>}
     </>
   );
 }
