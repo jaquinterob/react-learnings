@@ -1,0 +1,15 @@
+.contenedor-producto {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+pre {
+  font-size: 9px;
+}
+
+.no-productos {
+  padding: 1rem;
+  font-size: 10px;
+  font-style: italic;
+  color: gray;
+}
