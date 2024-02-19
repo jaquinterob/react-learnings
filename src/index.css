@@ -16,9 +16,47 @@ code {
   display: flex;
   place-content: center;
   gap: 10px;
+  margin: 30px;
 }
-.palabra { 
+
+.palabra {
   width: 30px;
-  height: 30px;
+  height: 20px;
   border-bottom: 1px solid;
+  text-align: center;
+}
+
+.pregunta-container {
+  text-align: center;
+  margin: 30px;
+}
+
+.botones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  max-width: 300px;
+}
+
+.boton-letra {
+  display: flex;
+  border: 1px dotted;
+  padding: 10px;
+  height: 10px;
+  width: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.horca-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.horca{
+  width: 100px;
 }
